@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 import { CartConsumer } from '../context/cartContext';
 
 const Navbar = () => {
-  const { apiData } = DataConsumer();
   const { cartItems } = CartConsumer();
   return (
     <nav className='navbar'>

@@ -4,7 +4,6 @@ import {
   useContext,
   useEffect,
   useReducer,
-  Children,
 } from 'react';
 
 import cartReducer from '../utils/reducer/cartReducer';

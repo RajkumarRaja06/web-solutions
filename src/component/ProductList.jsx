@@ -1,7 +1,7 @@
 import { IoBagAdd } from 'react-icons/io5';
 import { DataConsumer } from '../context/dataContext';
 import '../styles/productList.css';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { CartConsumer } from '../context/cartContext';
 
