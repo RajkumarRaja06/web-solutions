@@ -30,7 +30,7 @@ const cartReducer = (state, action) => {
     case 'REMOVE-TO-CART':
       const updateCart = state.cartItems
         .map((cartItem) =>
-          cartItem.id === action.item.id
+          cartItem.idCategory === action.item.idCategory
             ? { ...cartItem, quantity: cartItem.quantity - 1 }
             : cartItem
         )
