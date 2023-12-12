@@ -1,7 +1,7 @@
 import '../styles/login.css';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 import 'react-toastify/dist/ReactToastify.css';
 

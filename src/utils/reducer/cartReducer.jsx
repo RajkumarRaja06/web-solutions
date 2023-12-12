@@ -5,14 +5,17 @@ const cartReducer = (state, action) => {
         (item) => item.idCategory !== action.payload.id
       );
       return { ...state, cartItems: filteredItems };
+
     case 'UPDATE_PRICE':
       const updatePrice = state.cartItems.reduce((pre, curr) => {
         const amount = curr.quantity * curr.idCategory;
         return pre + amount;
       }, 0);
       return { ...state, subTotal: updatePrice };
+
     case 'CHECKOUT':
       return { ...state, cartItems: [] };
+
     case 'ADD-TO-CART':
       const existedItem = state.cartItems.find(
         (cartItem) => cartItem.idCategory === action.item.idCategory
@@ -41,8 +44,9 @@ const cartReducer = (state, action) => {
         )
         .filter((cartItem) => cartItem.quantity > 0);
       return { ...state, cartItems: updateCart };
+
     default:
-      break;
+      return { ...state };
   }
 };
 

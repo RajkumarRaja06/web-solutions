@@ -1,7 +1,5 @@
 import { BiChevronRight, BiChevronLeft } from 'react-icons/bi';
 import '../styles/productRow.css';
-import { MdShoppingBasket } from 'react-icons/md';
-import { FaRupeeSign } from 'react-icons/fa';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import React, { useRef, useState, useEffect } from 'react';
