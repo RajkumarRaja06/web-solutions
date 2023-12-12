@@ -1,0 +1,141 @@
+.cart {
+  height: 100vh;
+  margin-top: 5rem;
+  height: 100vh;
+  margin-bottom: 4rem;
+}
+
+.cart-header {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-header p {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(206, 205, 205);
+  width: 12rem;
+  height: 3rem;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: var(--clr-text-green);
+}
+
+.cart-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-data div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(206, 205, 205);
+  width: 12rem;
+  height: 9rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+.cart-data-img {
+  padding: 1rem;
+}
+
+.cart-data-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.cart-data-quantity p {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.cart-data-quantity h6 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cart-data-close p {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.emptyCart {
+  width: 50%;
+  height: 80%;
+  margin: 5rem auto;
+}
+
+.emptyCart h2 {
+  font-size: 1.75rem;
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+
+.cartTotal {
+  margin-top: 3.75rem;
+  position: relative;
+  right: 5.7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.cartTotal h2 {
+  position: relative;
+  right: 26.5%;
+  margin: 1rem 0rem;
+  font-size: 1.75rem;
+  color: var(--clr-text-green);
+  font-weight: 700;
+}
+
+.cartTotal div {
+  width: 35rem;
+  height: 3.75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(206, 205, 205);
+  padding: 0.25rem 1rem;
+}
+
+.cartTotal button {
+  margin-top: 2rem;
+  padding: 1rem 2em;
+  border-radius: 3rem;
+  font-size: 1rem;
+  background-color: var(--clr-text-green);
+  text-transform: uppercase;
+  border: 2px solid var(--clr-text-green);
+  color: var(--clr-text-white);
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.cartTotal button:hover {
+  background-color: #2d2a6e;
+  border: 2px solid #2d2a6e;
+}
+
+.total p {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #2d2a6e;
+}
+
+.cart-data-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,72 @@
+.form-register-outer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  margin: 2.5rem auto;
+  overflow-x: hidden;
+}
+
+.form-register {
+  max-width: 40rem;
+  margin-top: 7rem;
+  padding: 1.75rem 2.5rem;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 0.75rem;
+  background-color: var(--clr-text-white);
+  margin-bottom: 2rem;
+  overflow-x: hidden;
+}
+
+.form-register h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--clr-text-green);
+  font-weight: 800;
+}
+
+.form-register input {
+  width: 100%;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  margin: 1rem auto;
+  border-radius: 0.75rem;
+  font-size: 1.15rem;
+  border: none;
+  border-bottom: 2px solid var(--clr-text-green);
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+.btn-submit {
+  width: 10rem;
+  padding: 1rem 1.75rem;
+  font-size: 1rem;
+  background-color: var(--clr-text-green);
+  color: var(--clr-text-white);
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-weight: 700;
+}
+
+.btn-submit:hover {
+  filter: brightness(120%);
+}
+
+.btn-taken {
+  margin-left: 2rem;
+  font-size: 1.25rem;
+}
+
+.btn-container {
+  margin-top: 0.5rem;
+}

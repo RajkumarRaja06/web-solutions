@@ -1,0 +1,100 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-text-white);
+  z-index: 100;
+}
+
+.nav-logo a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.nav-logo-img {
+  width: 25%;
+  height: 25%;
+}
+
+.nav-logo a h3 {
+  color: var(--clr-text-green);
+  font-size: 1.95rem;
+  font-weight: 700;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav-menu ul li {
+  cursor: pointer;
+  color: var(--clr-text-blue);
+  font-size: 0.95rem;
+  font-weight: 700;
+  transition: 1.5s ease-out;
+}
+
+.nav-menu ul li:hover {
+  color: var(--clr-text-green);
+}
+
+.nav-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.nav-account,
+.nav-bag {
+  text-decoration: none;
+  font-size: 1.45rem;
+  color: var(--clr-text-blue);
+  border-radius: 50%;
+  text-align: center;
+}
+
+.nav-account {
+  background-color: var(--clr-background-pink);
+  padding: 0.2rem 0.65rem;
+  padding-top: 0.4rem;
+}
+
+.nav-account:hover {
+  filter: brightness(60%);
+  transform: scale(1.2);
+}
+
+.nav-bag:hover {
+  filter: brightness(60%);
+  transform: scale(1.2);
+}
+
+.nav-bag {
+  position: relative;
+  background-color: var(--clr-background-blue);
+  padding: 0.35rem 0.65rem;
+}
+
+.nav-bag-count {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: var(--clr-background-red);
+  padding: 0.1rem 0.4rem;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  color: var(--clr-text-white);
+  font-weight: 700;
+}
