@@ -155,11 +155,12 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  gap: 0.45rem;
 }
 
 .rowContainer-priceIcon {
   text-align: right;
-  font-size: 1.75rem;
+  font-size: 1.1rem;
   color: #dc2626;
 }
 
