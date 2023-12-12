@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = () => {
   const { apiTwoData } = DataConsumer();
-  const { cartItems, addToCart, removeToCart, subTotal, checkOut } =
+  const { cartItems, addToCart, removeToCart, subTotal, checkOut, removeItem } =
     CartConsumer();
   const navigate = useNavigate();
 
@@ -45,7 +45,6 @@ const Cart = () => {
           <div className='cart-data-list'>
             {cartItems &&
               cartItems.map((item, index) => {
-                console.log(item);
                 const { idCategory, quantity, strCategory, strCategoryThumb } =
                   item;
                 return (
@@ -58,7 +57,7 @@ const Cart = () => {
                     <div>${idCategory}</div>
                     <div className='cart-data-quantity'>
                       <p>
-                        <FaCircleMinus />
+                        <FaCircleMinus onClick={() => removeToCart(item)} />
                       </p>
                       <h6>{quantity}</h6>
                       <p onClick={() => addToCart(item)}>
@@ -67,7 +66,7 @@ const Cart = () => {
                     </div>
                     <div>${quantity * idCategory}</div>
                     <div className='cart-data-close'>
-                      <p onClick={() => removeToCart(item)}>
+                      <p onClick={() => removeItem(idCategory)}>
                         <IoMdCloseCircle />
                       </p>
                     </div>

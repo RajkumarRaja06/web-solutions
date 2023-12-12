@@ -1,5 +1,10 @@
 const cartReducer = (state, action) => {
   switch (action.type) {
+    case 'REMOVE-ITEM':
+      const filteredItems = state.cartItems.filter(
+        (item) => item.idCategory !== action.payload.id
+      );
+      return { ...state, cartItems: filteredItems };
     case 'UPDATE_PRICE':
       const updatePrice = state.cartItems.reduce((pre, curr) => {
         const amount = curr.quantity * curr.idCategory;
